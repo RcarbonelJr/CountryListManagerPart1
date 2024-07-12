@@ -5,17 +5,20 @@ public class Countries {
 
     // Instance Variables
     private final ArrayList<String> countries;
+    private final CountryIO countryIO;
 
     // Constructor
     public Countries() {
-        countries = new ArrayList<>();
+        countryIO = new CountryIO();
+        countries = countryIO.getCountries();
     }
 
     // Setter
     public void addCountry(String country) {
         countries.add(country);
         Collections.sort(countries);
-        System.out.println(country + " has been added.");
+        System.out.println(country + " has been saved.");
+        countryIO.saveCountries(countries);
     }
 
     public void displayCountries() {

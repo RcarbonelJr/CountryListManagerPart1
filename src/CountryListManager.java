@@ -1,10 +1,14 @@
 /* Author: Randall Carbonel
  * Date: 7/11/24
  * Class: ASD216 - Java Programming
- * Assignment: Project 8-4: Country List Manager
+ * Assignment: Update the Country List Manager so it stores the country list in a text file.
  * Specifications:
- *      - Store the country names in an array list.
- *      - Sort the country names so that they’re displayed in alphabetical order.
+ *      - Create a class named CountryIO that contains these methods:
+ *          - public ArrayList<String> getCountries()
+ *          - public boolean saveCountries(ArrayList<String> countries)
+ *      - Store the list of countries in a text file named countries.txt in the same directory as the CountriesIO class.
+ *        If the countries.txt file doesn’t exist, the CountriesIO class should create it. This class should use
+ *        buffered I/O streams, and it should close all I/O streams when they’re no longer needed.
  *      - Use the Console class presented in chapter 7 or an enhanced version of it to get and validate the user’s
  *        entries.
  */
